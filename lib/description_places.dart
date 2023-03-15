@@ -1,9 +1,23 @@
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget{
+  String namePlace;
+  dynamic stars;
+  String descriptionPlace;
+  DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
   @override
   Widget build(BuildContext context){
     //TODO: implement build
+    final starHalf = Container(
+      margin: const EdgeInsets.only(
+          top: 323.0,
+          right: 3.0
+      ),
+      child: const Icon(
+        Icons.star_half,
+        color: Color(0xFFf2c611),
+      ),
+    );
     final star = Container(
       margin: const EdgeInsets.only(
           top: 323.0,
@@ -20,18 +34,19 @@ class DescriptionPlace extends StatelessWidget{
           right: 3.0
       ),
       child: const Icon(
-        Icons.star,
+        Icons.star_border,
+        color: Color(0xFFCCC9C8),
       ),
     );
     final text_description = Container(
       margin: const EdgeInsets.only(
-          top: 5.0,
+          top: 20.0,
           left: 20.0,
           right: 30.0,
       ),
-      child: const Text(
-        "Performing hot reload...Syncing files to device iPhone 14...Reloaded 1 of 641 libraries in 216ms (compile: 67 ms, reload: 80 ms, reassemble: 52 ms).",
-        style: TextStyle(
+      child: Text(
+        descriptionPlace,
+        style: const TextStyle(
           fontSize: 15.0,
           fontWeight: FontWeight.w300,
         ),
@@ -46,9 +61,9 @@ class DescriptionPlace extends StatelessWidget{
             left: 20.0,
             right: 20.0,
           ),
-          child: const Text(
-            'Duwili Ella',
-            style: TextStyle(
+          child:  Text(
+            namePlace,
+            style: const TextStyle(
               fontSize: 30.0,
               fontWeight: FontWeight.w900,
             ),

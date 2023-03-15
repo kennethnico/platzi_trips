@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Platzi'),
           centerTitle: true,
         ),
-        body: DescriptionPlace(),
+        body: DescriptionPlace("Bahamas", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
       ),
       //const MyHomePage(title: 'Flutter Demo Home Page'),
 
