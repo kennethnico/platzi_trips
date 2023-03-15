@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         body: Stack(
           children: <Widget>[
         const Image(
-        image: AssetImage('assets/image/wp.jpg'),
+        image: AssetImage('assets/image/wp.png'),
         height: double.infinity,
         width: double.infinity,
         fit: BoxFit.cover,
