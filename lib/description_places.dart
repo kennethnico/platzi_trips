@@ -47,10 +47,11 @@ class DescriptionPlace extends StatelessWidget{
       child: Text(
         descriptionPlace,
         style: const TextStyle(
+          fontFamily: "Lato",
           fontSize: 15.0,
           fontWeight: FontWeight.w300,
         ),
-        textAlign: TextAlign.justify,
+        textAlign: TextAlign.left,
       ),
     );
     final title_stars = Row(
@@ -64,6 +65,7 @@ class DescriptionPlace extends StatelessWidget{
           child:  Text(
             namePlace,
             style: const TextStyle(
+              fontFamily: "Lato",
               fontSize: 30.0,
               fontWeight: FontWeight.w900,
             ),
