@@ -23,6 +23,5 @@ class DescriptionPlace extends StatelessWidget{
         ),
       ],
     );
-    return null;
   }
 }

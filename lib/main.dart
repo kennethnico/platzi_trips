@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description_places.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,31 +31,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Platzi'),
           centerTitle: true,
         ),
-        body: Stack(
-          children: <Widget>[
-        const Image(
-        image: AssetImage('assets/image/wp.png'),
-        height: double.infinity,
-        width: double.infinity,
-        fit: BoxFit.cover,
-      ),
-            Center(
-              child: Container(
-                height: 100,
-                color: const Color.fromRGBO(0, 0, 0, 0.5),
-                child: const Center(
-                  child: Text(
-                      "Kenneth",
-                      style: TextStyle(
-                          fontSize: 40,
-                          color: Colors.white
-                      )
-                  ),
-                ),
-              ),
-            )
-          ],
-        ),
+        body: DescriptionPlace(),
       ),
       //const MyHomePage(title: 'Flutter Demo Home Page'),
 
