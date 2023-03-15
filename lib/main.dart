@@ -43,15 +43,17 @@ class MyApp extends StatelessWidget {
                 height: 100,
                 color: const Color.fromRGBO(0, 0, 0, 0.5),
                 child: const Center(
-                  child: Text('Naughty', style: TextStyle(fontSize: 40, color: Colors.white)),
+                  child: Text(
+                      "Kenneth",
+                      style: TextStyle(
+                          fontSize: 40,
+                          color: Colors.white
+                      )
+                  ),
                 ),
               ),
             )
           ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: ()=>{},
-
         ),
       ),
       //const MyHomePage(title: 'Flutter Demo Home Page'),
