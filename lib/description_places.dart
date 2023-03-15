@@ -23,5 +23,6 @@ class DescriptionPlace extends StatelessWidget{
         ),
       ],
     );
+    return title_stars;
   }
 }
