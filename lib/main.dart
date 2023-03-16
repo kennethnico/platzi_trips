@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_places.dart';
+import 'review_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
           title: const Text('Platzi'),
           centerTitle: true,
         ),
-        body: DescriptionPlace("Bahamas", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
+        //body: DescriptionPlace("Bahamas", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
+        body: ReviewList(),
       ),
       //const MyHomePage(title: 'Flutter Demo Home Page'),
 

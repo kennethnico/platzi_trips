@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'review_list.dart';
 class DescriptionPlace extends StatelessWidget{
   String namePlace;
   dynamic stars;

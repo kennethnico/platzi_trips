@@ -12,32 +12,32 @@ class Review extends StatelessWidget {
   Widget build(BuildContext context) {
     final starHalf = Container(
       margin: const EdgeInsets.only(
-          top: 323.0,
           right: 3.0
       ),
       child: const Icon(
         Icons.star_half,
         color: Color(0xFFf2c611),
+        size: 15.0,
       ),
     );
     final star = Container(
       margin: const EdgeInsets.only(
-          top: 323.0,
           right: 3.0
       ),
       child: const Icon(
         Icons.star,
         color: Color(0xFFf2c611),
+        size: 15.0,
       ),
     );
     final voidStar = Container(
       margin: const EdgeInsets.only(
-          top: 323.0,
           right: 3.0
       ),
       child: const Icon(
         Icons.star_border,
         color: Color(0xFFCCC9C8),
+        size: 15.0,
       ),
     );
     final photo = Container(
