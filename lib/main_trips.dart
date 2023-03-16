@@ -31,6 +31,8 @@ class _MainTripsState extends State<MainTrips> {
           primaryColor: Colors.purple,
         ),
         child: BottomNavigationBar(
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
           currentIndex: indexTap,
           onTap: onTapTapped,
           items: const [
