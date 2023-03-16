@@ -28,6 +28,6 @@ class CardImage extends StatelessWidget {
         ]
       ),
     );
-    return const Placeholder();
+    return card;
   }
 }

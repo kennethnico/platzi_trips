@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_places.dart';
 import 'review_list.dart';
-import 'gradient_back.dart';
+import 'header_appbar.dart';
 import 'package:flutter/services.dart';
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                 ReviewList()
               ],
             ),
-            GradientBack("Bienvenido"),
+            HeaderAppBar()
           ],
         ),
       ),
