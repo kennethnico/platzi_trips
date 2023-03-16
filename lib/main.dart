@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             ListView(
               children: <Widget>[
-                DescriptionPlace("Bahamas", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.\n\nContext: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
+                DescriptionPlace("Evento 01", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.\n\nContext: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
                 ReviewList()
               ],
             ),
