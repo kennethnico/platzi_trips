@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_places.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,13 +28,25 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
+        /*
         appBar: AppBar(
           leading: const Icon(Icons.home),
           title: const Text('Platzi'),
           centerTitle: true,
         ),
+        */
         //body: DescriptionPlace("Bahamas", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
-        body: ReviewList(),
+        body: Stack(
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("Bahamas", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.\n\nContext: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
+                ReviewList()
+              ],
+            ),
+            GradientBack(),
+          ],
+        ),
       ),
       //const MyHomePage(title: 'Flutter Demo Home Page'),
 
