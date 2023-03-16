@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'review_list.dart';
+import 'button_purple.dart';
 class DescriptionPlace extends StatelessWidget{
   String namePlace;
   dynamic stars;
@@ -84,9 +84,11 @@ class DescriptionPlace extends StatelessWidget{
       ],
     );
     final fullDescription = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         title_stars,
         text_description,
+        ButtonPurple("Ver más")
       ],
     );
     return fullDescription;
