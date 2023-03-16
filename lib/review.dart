@@ -101,7 +101,8 @@ class Review extends StatelessWidget {
         comment,
         style: const TextStyle(
             fontFamily: "Lato",
-            fontSize: 17.0
+            fontSize: 13.0,
+            fontWeight: FontWeight.w900
         ),
       ),
     );
