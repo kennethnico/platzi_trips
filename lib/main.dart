@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'description_places.dart';
-import 'review_list.dart';
-import 'header_appbar.dart';
 import 'package:flutter/services.dart';
+import 'main_trips.dart';
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
@@ -33,27 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        /*
-        appBar: AppBar(
-          leading: const Icon(Icons.home),
-          title: const Text('Platzi'),
-          centerTitle: true,
-        ),
-        */
-        //body: DescriptionPlace("Bahamas", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Evento 01", "3.5","Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);Context: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.\n\nContext: Found this candidate, but the arguments don't match.DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);"),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        ),
-      ),
+      home: MainTrips()
       //const MyHomePage(title: 'Flutter Demo Home Page'),
 
     );
