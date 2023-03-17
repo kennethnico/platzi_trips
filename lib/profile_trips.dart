@@ -5,7 +5,7 @@ class ProfileTrips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0XFF209480),
+      color: const Color(0XFF640a0e),
     );
   }
 }
