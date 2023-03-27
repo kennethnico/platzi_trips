@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'profile_description_image.dart';
 import 'profile_card.dart';
 
 class ProfileCardDescriptionList extends StatelessWidget {
