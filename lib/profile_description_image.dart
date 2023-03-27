@@ -11,7 +11,7 @@ class ProfileDescriptionImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final titlePoint = Container(
       margin: const EdgeInsets.only(
-          top: 20.0,
+          top: 15.0,
           left: 20.0
       ),
       child: Text(
@@ -62,7 +62,7 @@ class ProfileDescriptionImage extends StatelessWidget {
       ],
     );
     final card = Container(
-      height: 150.0,
+      height: 120.0,
       width: 280.0,
       margin: const EdgeInsets.only(
         top: 250.0,
@@ -72,12 +72,20 @@ class ProfileDescriptionImage extends StatelessWidget {
         right: 5.0
       ),
       decoration: BoxDecoration(
+        color: Colors.white,
         borderRadius: const BorderRadius.all(Radius.circular(15.0)),
         shape: BoxShape.rectangle,
         border: Border.all(
           width: 0.5,
           color: const Color(0xFF202553),
         ),
+        boxShadow: const <BoxShadow>[
+          BoxShadow(
+            color: Colors.black45,
+            blurRadius: 15.0,
+            offset: Offset(0.0, 0.7)
+          )
+        ],
       ),
       child: pointC,
     );
