@@ -22,9 +22,8 @@ class ProfileDescriptionImage extends StatelessWidget {
         textAlign: TextAlign.left,
       ),
     );
-    final description = Container(
+    final descriptionPoint = Container(
       margin: const EdgeInsets.only(
-          top: 20.0,
           left: 20.0
       ),
       child: Text(
@@ -37,8 +36,25 @@ class ProfileDescriptionImage extends StatelessWidget {
         textAlign: TextAlign.left,
       ),
     );
+    final stepPoint = Container(
+      margin: const EdgeInsets.only(
+        left: 20.0
+      ),
+      child: Text(
+        steps,
+        style: const TextStyle(
+          fontFamily: "Lato",
+          fontSize: 17.0,
+          fontWeight: FontWeight.w300,
+        )
+      ),
+    );
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
+        titlePoint,
+        descriptionPoint,
+        stepPoint
       ],
     );
   }
