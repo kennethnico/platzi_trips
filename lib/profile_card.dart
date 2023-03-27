@@ -14,8 +14,8 @@ class ProfileCard extends StatelessWidget {
       height: 210.0,
       width: 350.0,
       margin: const EdgeInsets.only(
-        top: 250.0,
-        left: 20.0
+        top: 100.0,
+          left: 20.0
       ),
       decoration: BoxDecoration(
         image: DecorationImage(
@@ -34,7 +34,7 @@ class ProfileCard extends StatelessWidget {
       ),
     );
     return Stack(
-      alignment: const Alignment(0.0, 1.8),
+      alignment: const Alignment(0.0, 1.6),
       children: <Widget>[
         cardImage,
         ProfileDescriptionImage(titleImage,descriptionImage,steps),

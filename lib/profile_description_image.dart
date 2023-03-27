@@ -4,7 +4,6 @@ class ProfileDescriptionImage extends StatelessWidget {
   String titleImage = "Knuckles Mountains Range";
   String descriptionImage = "Este es un ejemplo de descripción para la imagen";
   String steps = "Steps: 123,123,123";
-
   ProfileDescriptionImage(this.titleImage,this.descriptionImage,this.steps);
 
   @override
@@ -65,7 +64,6 @@ class ProfileDescriptionImage extends StatelessWidget {
       height: 120.0,
       width: 280.0,
       margin: const EdgeInsets.only(
-        top: 250.0,
         left: 20.0
       ),
       padding: const EdgeInsets.only(
