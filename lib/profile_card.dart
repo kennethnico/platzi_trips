@@ -3,7 +3,10 @@ import 'profile_description_image.dart';
 
 class ProfileCard extends StatelessWidget {
   String pathImage = "assets/image/wp.png";
-  ProfileCard(this.pathImage);
+  String titleImage = "Knuckles Mountains Range";
+  String descriptionImage = "Este es un ejemplo de descripción para la imagen";
+  String steps = "Steps: 123,123,123";
+  ProfileCard(this.pathImage,this.titleImage,this.descriptionImage,this.steps);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +37,7 @@ class ProfileCard extends StatelessWidget {
       alignment: const Alignment(0.0, 1.8),
       children: <Widget>[
         cardImage,
-        ProfileDescriptionImage("Knuckles Mountains Range", "Debug service listening on ws://127.0.0.1:54594/UhAK4hQHRbo=", "Steps: 123,123,123"),
+        ProfileDescriptionImage(titleImage,descriptionImage,steps),
       ],
     );
   }
