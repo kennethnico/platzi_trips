@@ -34,7 +34,6 @@ class ProfileCardImage extends StatelessWidget {
     );
     final photoProfile = Container(
       margin: const EdgeInsets.only(
-        top: 100.0,
         left: 20.0,
       ),
       width: 80.0,
@@ -49,7 +48,6 @@ class ProfileCardImage extends StatelessWidget {
     );
     final userProfile = Container(
       margin: const EdgeInsets.only(
-        //top: 5.0,
         left: 20.0,
       ),
       child: Text(
@@ -62,8 +60,7 @@ class ProfileCardImage extends StatelessWidget {
     );
     final userEmail = Container(
       margin: const EdgeInsets.only(
-        //top: 5.0,
-        left: 20.0,
+        left: 20.0
       ),
       child: Text(
         emailProfile,
@@ -73,9 +70,17 @@ class ProfileCardImage extends StatelessWidget {
         ),
       ),
     );
+    final userDetails = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        userProfile,
+        userEmail
+      ],
+    );
     return Row(
       children: <Widget>[
         photoProfile,
+        userDetails
       ],
     );
   }
