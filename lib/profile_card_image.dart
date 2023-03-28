@@ -97,6 +97,7 @@ class ProfileCardImage extends StatelessWidget {
     /* Tira de Circulos*/
     final saveIcon = Container(
       margin: const EdgeInsets.only(
+        top: 25.0,
           right: 15.0,
           left: 15.0,
       ),
@@ -108,7 +109,7 @@ class ProfileCardImage extends StatelessWidget {
       height: 45.0,
       decoration: const BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.blue,
+        color: Colors.white,
       ),
       child: const Icon(
         Icons.save_outlined,
