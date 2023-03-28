@@ -12,23 +12,26 @@ class ProfileCardImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final titleProfile = Container(
       margin: const EdgeInsets.only(
-        left: 20.0,
+          top: 15.0,
+          left: 20.0,
+          bottom: 20.0
       ),
       child: Text(
         title,
         style: const TextStyle(
-            fontFamily: "Lato",
-            fontSize: 18.0
+          fontFamily: "Lato",
+          fontSize: 30.0,
+          fontWeight: FontWeight.w900,
         ),
       ),
     );
     final engine = Container(
       margin: const EdgeInsets.only(
-          right: 5.0
+          right: 25.0
       ),
       child: const Icon(
         Icons.settings,
-        color: Color(0xFFf2c611),
+        color: Color(0xFFCCC9C8),
         size: 15.0,
       ),
     );
@@ -70,6 +73,14 @@ class ProfileCardImage extends StatelessWidget {
         ),
       ),
     );
+    final cabecera = Row(
+      //crossAxisAlignment: CrossAxisAlignment.baseline,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        titleProfile,
+        engine
+      ],
+    );
     final userDetails = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -77,10 +88,17 @@ class ProfileCardImage extends StatelessWidget {
         userEmail
       ],
     );
-    return Row(
+    final cardProfile = Row(
       children: <Widget>[
         photoProfile,
         userDetails
+      ],
+    );
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        cabecera,
+        cardProfile
       ],
     );
   }
