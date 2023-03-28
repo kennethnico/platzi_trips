@@ -94,11 +94,44 @@ class ProfileCardImage extends StatelessWidget {
         userDetails
       ],
     );
+    /* Tira de Circulos*/
+    final saveIcon = Container(
+      margin: const EdgeInsets.only(
+          right: 15.0,
+          left: 15.0,
+      ),
+      padding: const EdgeInsets.only(
+        //left: 20.0,
+        //right: 20.0
+      ),
+      width: 45.0,
+      height: 45.0,
+      decoration: const BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.blue,
+      ),
+      child: const Icon(
+        Icons.save_outlined,
+        color: Color(0xFF584CD1),
+        size: 20.0,
+      ),
+    );
+    final icons = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        saveIcon,
+        saveIcon,
+        saveIcon,
+        saveIcon,
+        saveIcon
+      ],
+    );
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         cabecera,
-        cardProfile
+        cardProfile,
+        icons
       ],
     );
   }
