@@ -9,7 +9,24 @@ class ProfileGradientBack extends StatelessWidget {
     return Container(
       height: 300.0,
       decoration: const BoxDecoration(
-        gradient: LinearGradient(colors: colors)
+        gradient: RadialGradient(
+            center: FractionalOffset(1.0, 1.0),
+            radius: 0.5,
+            colors: [
+              Color(0xFF4268D3),
+              Color(0xFF584CD1)
+            ],
+          tileMode: TileMode.clamp
+        ),
+      ),
+      child: Text(
+        title,
+        style: const TextStyle(
+            color: Colors.white,
+            fontSize: 30.0,
+            fontFamily: "Lato",
+            fontWeight: FontWeight.bold
+        ),
       ),
     );
   }
