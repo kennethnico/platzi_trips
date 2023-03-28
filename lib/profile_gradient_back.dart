@@ -10,13 +10,14 @@ class ProfileGradientBack extends StatelessWidget {
       height: 300.0,
       decoration: const BoxDecoration(
         gradient: RadialGradient(
-            center: FractionalOffset(1.0, 1.0),
-            radius: 0.5,
+            center: FractionalOffset(0.95, 1.0),
+            radius: 0.95,
             colors: [
+              Color(0xFF584CD1),
               Color(0xFF4268D3),
-              Color(0xFF584CD1)
             ],
-          tileMode: TileMode.clamp
+            //stops: <double>[0.7, 0.6],
+            tileMode: TileMode.clamp
         ),
       ),
       child: Text(
