@@ -89,7 +89,7 @@ class ProfileDescriptionImage extends StatelessWidget {
     );
 
     return Stack(
-      alignment: const Alignment(0.9, 1.1),
+      alignment: const Alignment(0.9, 1.5),
       children: <Widget>[
         card,
         FloatingActionButtonGreen()

@@ -12,9 +12,9 @@ class ProfileCardImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final titleProfile = Container(
       margin: const EdgeInsets.only(
-          top: 60.0,
+          top: 70.0,
           left: 20.0,
-          bottom: 20.0
+          bottom: 10.0
       ),
       child: Text(
         title,

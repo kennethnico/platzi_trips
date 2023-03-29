@@ -6,7 +6,7 @@ class ProfileGradientBack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 350.0,
+      height: 380.0,
       width: 400.0,
       decoration: const BoxDecoration(
         /*
