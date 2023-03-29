@@ -15,7 +15,8 @@ class ProfileTrips extends StatelessWidget {
           children: <Widget>[
             ProfileCardDescriptionList(),
           ],
-        )
+        ),
+        //HeaderProfileAppBar(),
       ],
     );
   }
