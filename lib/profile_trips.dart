@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'profile_card_description_list.dart';
-
 import 'header_profile_appbar.dart';
 
 class ProfileTrips extends StatelessWidget {

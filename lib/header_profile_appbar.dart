@@ -8,7 +8,7 @@ class HeaderProfileAppBar extends StatelessWidget {
     return Stack(
       children: <Widget>[
         ProfileGradientBack(""),
-        ProfileCardImage("Profile", "assets/image/wp.png", "Edin Nicolas", "krenicgm@gmail.com")
+        ProfileCardImage("Profile", "assets/image/wp.png", "Edwin K. Nicolas", "krenicgm@gmail.com")
       ],
     );
   }
