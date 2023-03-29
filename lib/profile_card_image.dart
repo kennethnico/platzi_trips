@@ -12,7 +12,7 @@ class ProfileCardImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final titleProfile = Container(
       margin: const EdgeInsets.only(
-          top: 15.0,
+          top: 60.0,
           left: 20.0,
           bottom: 20.0
       ),
@@ -22,11 +22,13 @@ class ProfileCardImage extends StatelessWidget {
           fontFamily: "Lato",
           fontSize: 30.0,
           fontWeight: FontWeight.w900,
+          color: Colors.white
         ),
       ),
     );
     final engine = Container(
       margin: const EdgeInsets.only(
+        top: 60.0,
           right: 25.0
       ),
       child: const Icon(
@@ -57,7 +59,8 @@ class ProfileCardImage extends StatelessWidget {
         nameProfile,
         style: const TextStyle(
           fontFamily: "Lato",
-          fontSize: 17.0
+          fontSize: 17.0,
+          color: Colors.white
         ),
       ),
     );
@@ -69,7 +72,8 @@ class ProfileCardImage extends StatelessWidget {
         emailProfile,
         style: const TextStyle(
           fontFamily: "Lato",
-          fontSize: 17.0
+          fontSize: 17.0,
+          color: Colors.white
         ),
       ),
     );
