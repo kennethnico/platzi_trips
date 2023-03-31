@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'profile_button_plus.dart';
 
 class ProfileCardImage extends StatelessWidget {
   String title = "Profile";
-  String pathImage = "assets/image/wp/.png";
+  String pathImage = "assets/image/wp.png";
   String nameProfile = "Kenneth Nicolás";
   String emailProfile = "krenicgm@gmail.com";
 
@@ -128,6 +129,7 @@ class ProfileCardImage extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         saveIcon,
+        ProfileButtonPlus()
       ],
     );
     return Column(
