@@ -27,15 +27,22 @@ class ProfileCardImage extends StatelessWidget {
         ),
       ),
     );
-    final engine = Container(
-      margin: const EdgeInsets.only(
-        top: 60.0,
-          right: 25.0
-      ),
-      child: const Icon(
-        Icons.settings,
-        color: Color(0xFFCCC9C8),
-        size: 15.0,
+    final engine = InkWell(
+      onTap: (){
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Engine...")),
+        );
+      },
+      child: Container(
+        margin: const EdgeInsets.only(
+            top: 60.0,
+            right: 25.0
+        ),
+        child: const Icon(
+          Icons.settings,
+          color: Color(0xFFCCC9C8),
+          size: 15.0,
+        ),
       ),
     );
     final photoProfile = Container(
@@ -112,9 +119,9 @@ class ProfileCardImage extends StatelessWidget {
           right: 15.0,
           left: 15.0,
         ),
-        width: 45.0,
-        height: 45.0,
-        decoration: BoxDecoration(
+        width: 40.0,
+        height: 40.0,
+        decoration: const BoxDecoration(
           shape: BoxShape.circle,
           color: Colors.white,
         ),
@@ -125,11 +132,89 @@ class ProfileCardImage extends StatelessWidget {
         ),
       ),
     );
+    final tvIcon = InkWell(
+      onTap: (){
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("TV Icon press...")),
+        );
+      },
+      child: Container(
+        margin: const EdgeInsets.only(
+          top: 25.0,
+          left: 15.0,
+          right: 15.0
+        ),
+        height: 40.0,
+        width: 40.0,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.white54
+        ),
+        child: const Icon(
+          Icons.live_tv_outlined,
+          color: Color(0xFF584CD1),
+          size: 20.0,
+        ),
+      ),
+    );
+    final mailIcon = InkWell(
+      onTap: (){
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("MailIcon press...")),
+        );
+      },
+      child: Container(
+        margin: const EdgeInsets.only(
+          top: 25.0,
+          left: 15.0,
+          right: 15.0
+        ),
+        height: 40.0,
+        width: 40.0,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.white54
+        ),
+        child: const Icon(
+          Icons.mail_outline,
+          color: Color(0xFF584CD1),
+          size: 20.0,
+        ),
+      ),
+    );
+    final userIcon = InkWell(
+      onTap: (){
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("UserIcon press...")),
+        );
+      },
+      child: Container(
+        margin: const EdgeInsets.only(
+          top: 25.0,
+          left: 15.0,
+          right: 15.0
+        ),
+        height: 40.0,
+        width: 40.0,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.white54
+        ),
+        child: const Icon(
+          Icons.person,
+          color: Color(0xFF584CD1),
+          size: 20.0,
+        ),
+      ),
+    );
     final icons = Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         saveIcon,
-        ProfileButtonPlus()
+        tvIcon,
+        ProfileButtonPlus(),
+        mailIcon,
+        userIcon
       ],
     );
     return Column(
